@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .bannerIcon{
+      @apply w-14 h-14 bg-[#006b6a] bg-opacity-25 text-[#282938] dark:text-black dark:bg-opacity-50 dark:hover:bg-opacity-100 text-xl inline-flex items-center 
+      justify-center rounded-full shadow-md hover:bg-opacity-100 hover:-translate-y-1 transition-all hover:text-[#FFFFFF] hover:bg-[#006b6a] cursor-pointer duration-300;
+  }
+  .resumeLi {
+  @apply w-full h-16 px-2 bg-[#FFFFFF] dark:text-white dark:bg-transparent shadow-inner bg-opacity-25 text-xl text-[#282938] flex justify-center cursor-pointer  items-center border-b-[1px] rounded-lg;
+       }
+
+.bgOpacity {
+@apply bg-gray-900 bg-opacity-40;
+                }
+  .contactInput{
+      @apply w-full h-12 text-xl rounded-lg border-b-[1px] shadow-md dark:border-b-black bg-[#FFFFFF] text-[#282938] px-4 active:outline-none focus-visible:outline-[#282938] outline-none focus-visible:border-b-transparent duration-300
+  }
+.contactTextArea{
+  @apply w-full rounded-lg text-xl border-b-[1px] shadow-md dark:border-b-black bg-[#FFFFFF] text-[#282938] px-4 py-2 active:outline-none focus-visible:outline-[#282938] outline-none focus-visible:border-b-transparent duration-300 resize-none
+}
+}
+
+.active {
+  color: white;
+}
+.scrollbar-hide::-webkit-scrollbar{
+  display: none;
+}
