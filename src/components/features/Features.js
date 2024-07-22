@@ -5,7 +5,7 @@ import Card from './Card'
 
 const Features = () => {
   return (
-    <section id='features' className='w-full px-16 py-20 dark:bg-black bg-[#FFFFFF]'>
+    <section id='features' className='w-full py-20 dark:bg-black bg-[#FFFFFF]'>
       <div className='w-full max-w-screen-xl mx-auto'> 
       <Title title={"My Skills"} des={"My Expertise"}/>
         <div className='w-full max-w-screen-xl mx-auto'>

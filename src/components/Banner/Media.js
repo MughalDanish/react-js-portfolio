@@ -23,10 +23,10 @@ const Media = () => {
       <a
         href="/Resume.pdf" // Replace this with the actual path to your resume PDF
         download="Resume.pdf"
-        className=" w-1/3 flex items-center justify-center px-2 py-3 dark:hover:bg-gray-200 dark:hover:text-[#1a1a1a] bg-[#006b6a] text-white rounded-lg shadow-lg hover:bg-[#1a1a1a] hover:text-gray-200 transition-colors duration-300"
+        className=" w-1/2 lgl:w-1/4 flex items-center justify-center px-2 py-3 dark:hover:bg-gray-200 dark:hover:text-[#1a1a1a] bg-[#006b6a] text-white rounded-lg shadow-lg hover:bg-[#1a1a1a] hover:text-gray-200 transition-colors duration-300"
       >
         <FaFileDownload className="mr-2" />
-        Download Resume 
+        Resume 
       </a>
     </div>
   );

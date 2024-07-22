@@ -14,25 +14,6 @@ const Navbar = () => {
         <img src={logo} alt="logo" />
       </div>
       <div className="flex items-center gap-6 lg:gap-10">
-        <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
-          {navLinksdata.map(({ _id, title, link }) => (
-            <li
-              className="text-base font-normal text-[#282938] dark:text-gray-300 tracking-wide cursor-pointer hover:text-[#5e3bee] dark:hover:text-[#a5a5ff] duration-300"
-              key={_id}
-            >
-              <Link
-                activeClass="active"
-                to={link}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                {title}
-              </Link>
-            </li>
-          ))}
-        </ul>
         <button
           onClick={toggleTheme}
           className="px-4 py-2 border rounded-lg text-base text-[#282938] dark:text-gray-300 tracking-wide cursor-pointer hover:text-[#5e3bee] dark:hover:text-[#a5a5ff] duration-300"

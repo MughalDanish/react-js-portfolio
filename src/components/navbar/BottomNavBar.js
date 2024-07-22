@@ -9,7 +9,7 @@ import { navLinksdata } from '../../constants'; // Adjust the import path if nec
 const BottomNavbar = () => {
   return (
     <div className="flex justify-center">
-      <div className="fixed top-1/2 right-[10%] sm:right-[2%] lg:w-[80px] md:w-[80px] h-80 flex flex-col gap-4 justify-around items-center bg-black backdrop-blur-md backdrop-filter backdrop-opacity-62 bg-opacity-40 p-4 rounded-lg shadow-lg z-20 transform -translate-y-1/2">
+      <div className="fixed top-1/2 right-[10%] sm:right-[2%] w-[50px] lg:w-[80px] md:w-[80px] h-80 flex flex-col gap-4 justify-around items-center bg-black backdrop-blur-md backdrop-filter backdrop-opacity-62 bg-opacity-40 p-4 rounded-lg shadow-lg z-20 transform -translate-y-1/2">
         {navLinksdata.map(({ _id, link }) => {
           let Icon;
           switch (link) {

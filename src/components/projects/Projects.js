@@ -14,7 +14,10 @@ const Projects = () => {
   const [Game, setGameProject] = useState(false);
   const [Web, setWebProject] = useState(false);
   return (
-    <section id="projects" className="w-full py-20 bg-[#F5FCFF] dark:bg-[#001919]">
+    <section
+      id="projects"
+      className="w-full py-20 bg-[#F5FCFF] dark:bg-[#001919]"
+    >
       <div className="w-full max-w-screen-xl mx-auto">
         <Title title={"My Projects"} des={"Portfolio"} />
         <div className="flex flex-wrap justify-center mb-5">
@@ -45,8 +48,8 @@ const Projects = () => {
               }
               className={`${
                 Mobile
-                ? "border-b-[#5e3bee] dark:border dark:border-[#006a6b] bg-[#282939] dark:bg-white rounded-lg dark:text-black text-[#FFFFFF]"
-                : "border-transparent"
+                  ? "border-b-[#5e3bee] dark:border dark:border-[#006a6b] bg-[#282939] dark:bg-white rounded-lg dark:text-black text-[#FFFFFF]"
+                  : "border-transparent"
               } resumeLi`}
             >
               Mobile Apps
@@ -61,8 +64,8 @@ const Projects = () => {
               }
               className={`${
                 All
-                ? "border-b-[#5e3bee] dark:border dark:border-[#006a6b] bg-[#282939] dark:bg-white rounded-lg dark:text-black text-[#FFFFFF]"
-                : "border-transparent"
+                  ? "border-b-[#5e3bee] dark:border dark:border-[#006a6b] bg-[#282939] dark:bg-white rounded-lg dark:text-black text-[#FFFFFF]"
+                  : "border-transparent"
               } resumeLi`}
             >
               All Apps
@@ -77,8 +80,8 @@ const Projects = () => {
               }
               className={`${
                 Game
-                ? "border-b-[#5e3bee] dark:border dark:border-[#006a6b] bg-[#282939] dark:bg-white rounded-lg dark:text-black text-[#FFFFFF]"
-                : "border-transparent"
+                  ? "border-b-[#5e3bee] dark:border dark:border-[#006a6b] bg-[#282939] dark:bg-white rounded-lg dark:text-black text-[#FFFFFF]"
+                  : "border-transparent"
               } resumeLi`}
             >
               Game Apps
@@ -93,8 +96,8 @@ const Projects = () => {
               }
               className={`${
                 Web
-                ? "border-b-[#5e3bee] dark:border dark:border-[#006a6b] bg-[#282939] dark:bg-white rounded-lg dark:text-black text-[#FFFFFF]"
-                : "border-transparent"
+                  ? "border-b-[#5e3bee] dark:border dark:border-[#006a6b] bg-[#282939] dark:bg-white rounded-lg dark:text-black text-[#FFFFFF]"
+                  : "border-transparent"
               } resumeLi`}
             >
               Web Apps
