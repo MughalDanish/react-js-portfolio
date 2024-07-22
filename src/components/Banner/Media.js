@@ -5,6 +5,7 @@ import {
   FaLinkedinIn,
   FaFileDownload,
 } from "react-icons/fa";
+
 const Media = () => {
   return (
     <div className="flex flex-col gap-6 lgl:gap-10 justify-between">
@@ -25,7 +26,7 @@ const Media = () => {
         className=" w-1/3 flex items-center justify-center px-2 py-3 dark:hover:bg-gray-200 dark:hover:text-[#1a1a1a] bg-[#006b6a] text-white rounded-lg shadow-lg hover:bg-[#1a1a1a] hover:text-gray-200 transition-colors duration-300"
       >
         <FaFileDownload className="mr-2" />
-        Download Resume
+        Download Resume 
       </a>
     </div>
   );

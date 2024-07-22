@@ -3,7 +3,7 @@ import { HiArrowRight } from "react-icons/hi";
 
 const Card = ({ item: { title, des, icon } }) => {
   return (
-    <div className="w-full px-12 h-80 py-10 rounded-lg shadow-md flex items-center dark:bg-[#001919] bg-[#F5FCFF] group relative overflow-hidden transform transition-transform duration-300 hover:border-4 hover:border-[#006b6a] hover:scale-110">
+    <div className="w-full px-5 h-auto py-10 rounded-lg shadow-md flex flex-col items-center dark:bg-[#001919] bg-[#F5FCFF] group relative overflow-hidden transform transition-transform duration-300 hover:border-4 hover:border-[#006b6a] hover:scale-110">
       <div className="h-72 py-4 overflow-y-hidden">
         <div className="flex flex-col gap-6">
           <span
@@ -16,7 +16,7 @@ const Card = ({ item: { title, des, icon } }) => {
           <h2 className="text-xl md:text-2xl font-titleFont font-bold text-[#282939] dark:text-gray-300">
             {title}
           </h2>
-          <p className="base dark:text-gray-100">{des}</p>
+          <p className="text-xl dark:text-gray-100">{des}</p>
         </div>
       </div>
     </div>

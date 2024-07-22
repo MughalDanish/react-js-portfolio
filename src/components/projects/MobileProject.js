@@ -18,6 +18,7 @@ const MobileProject = () => {
       imageSrc={FoodMobileBanner}
       videoSrc={FoodMobileApp}
       mediaType={'video'}
+      gitHubLink={"https://github.com/MughalDanish/Food-Square-Restaurant-App"}
       />
       </div>
   </motion.div>

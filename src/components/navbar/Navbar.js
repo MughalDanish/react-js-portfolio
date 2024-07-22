@@ -9,7 +9,7 @@ const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <div className="w-full h-24 px-4 sticky top-0 z-50 dark:bg-transparent bg-[#FFFFFF] dark:bg-[#1a1a1a] mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 dark:border-b-gray-400">
+    <div className="w-full h-24 px-4 sticky top-0 z-50 dark:bg-transparent bg-transparent dark:bg-[#1a1a1a] mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 dark:border-b-gray-400">
       <div>
         <img src={logo} alt="logo" />
       </div>

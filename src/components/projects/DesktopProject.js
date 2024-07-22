@@ -25,6 +25,7 @@ const DesktopProject = () => {
           imageSrc={FypDesktopBanner}
           videoSrc={FypDesktopProject}
           mediaType={"video"}
+          gitHubLink={"https://gitlab.com/solo6662208/Final_Year_Project"}
         />
         <ProjectsCard
           title={"E-Commerce Desktop App"}
@@ -33,6 +34,7 @@ const DesktopProject = () => {
           imageSrc={WalmartDesktopBanner}
           videoSrc={WalmartDesktopAPP}
           mediaType={"video"}
+          gitHubLink={"https://github.com/MughalDanish/Walmart-Desktop-APP"}
         />
         <ProjectsCard
           title={"Sorting Algorithm Desktop App"}
@@ -41,6 +43,7 @@ const DesktopProject = () => {
           imageSrc={SortingDesktopApp}
           videoSrc={SortingDesktopApp}
           mediaType={"image"}
+          gitHubLink={"https://github.com/MughalDanish/SortingAlgorithm-with-GUI"}
         />
         <ProjectsCard
           title={"Farmer Representative App"}
@@ -49,6 +52,7 @@ const DesktopProject = () => {
           imageSrc={FarmerProjectBaneer}
           videoSrc={FarmerDesktopApp}
           mediaType={"video"}
+          gitHubLink={"https://gitlab.com/AbdulMateenzwl/DB2021FinalProjectG-39"}
         />
       </div>
     </motion.div>

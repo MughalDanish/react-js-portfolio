@@ -41,6 +41,6 @@ export const featuresData = [
     id: 6,
     icon: <SiMinds />,
     title: "Machine Learning",
-    des: "Train real world problem using both regression and classification models using Python libraries like Pandas, NumPy, TensorFlow, and Scikit-Learn.",
+    des: "Solve problems using both regression and classification models using libraries like pandas, TensorFlow, and Scikit-Learn.",
   },
 ];

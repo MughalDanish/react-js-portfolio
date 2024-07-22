@@ -17,6 +17,7 @@ const GameProjects = () => {
         imageSrc={GameProjectBanner}
         videoSrc={GameProjectApp}
         mediaType={'video'}
+        gitHubLink={"https://github.com/MughalDanish/Final-Game-Framework"}
         />
         </div>
     </motion.div>

@@ -39,7 +39,7 @@ const BottomNavbar = () => {
               smooth={true}
               offset={-70}
               duration={500}
-              className="text-3xl hover:scale-110 hover:bg-[#006a6b]- cursor-pointer dark:text-gray-200  duration-300"
+              className="text-3xl hover:scale-110 hover:bg-[#006a6b]- cursor-pointer dark:text-gray-200 duration-300"
             >
               <Icon />
             </Link>
