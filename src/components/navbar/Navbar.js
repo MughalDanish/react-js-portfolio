@@ -1,8 +1,9 @@
 import React, { useState, useContext } from 'react';
-import { Link } from "react-scroll";
 import { logo } from "../../assets/index";
-import { navLinksdata } from '../../constants';
 import { ThemeContext } from '../../ThemeContext';
+import { useContext } from "react";
+import { MdDarkMode } from "react-icons/md";
+import { MdLightMode } from "react-icons/md";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -18,7 +19,8 @@ const Navbar = () => {
           onClick={toggleTheme}
           className="px-4 py-2 border rounded-lg text-base text-[#282938] dark:text-gray-300 tracking-wide cursor-pointer hover:text-[#5e3bee] dark:hover:text-[#a5a5ff] duration-300"
         >
-          {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+          {theme === 'light' ? <MdDarkMode/> : <MdLightMode/>}
+        
         </button>
       </div>
     </div>
