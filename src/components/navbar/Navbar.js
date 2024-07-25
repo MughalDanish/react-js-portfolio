@@ -1,12 +1,12 @@
-import React, { useState, useContext } from 'react';
+import React from 'react';
 import { logo } from "../../assets/index";
 import { ThemeContext } from '../../ThemeContext';
 import { useContext } from "react";
 import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
 
+
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="flex items-center gap-6 lg:gap-10">
         <button
           onClick={toggleTheme}
-          className="px-4 py-2 border rounded-lg text-base text-[#282938] dark:text-gray-300 tracking-wide cursor-pointer hover:text-[#5e3bee] dark:hover:text-[#a5a5ff] duration-300"
+          className="px-4 py-2 text-3xl text-[#282938] dark:text-gray-300 tracking-wide cursor-pointer hover:text-[#5e3bee] dark:hover:text-[#a5a5ff] duration-300"
         >
           {theme === 'light' ? <MdDarkMode/> : <MdLightMode/>}
         
