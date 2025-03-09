@@ -19,7 +19,7 @@ const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");
 
   return (
-    <section id="projects" className="relative w-full py-32 overflow-visible bg-gradient-to-b from-[#E3FDFD] to-[#A6E3E9] dark:to-[#002525]">
+    <section id="projects" className="relative w-full py-32 overflow-visible bg-gradient-to-b from-[#E3FDFD] to-[#A6E3E9] dark:bg-none dark:to-[#002525]">
       {/* Top Wave Background
       <div className="absolute top-0 w-full z-0 ">
         <svg className="w-full text-purple-200 dark:text-[#003030]" viewBox="0 0 1440 320">
@@ -34,13 +34,18 @@ const Projects = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Title title="My Projects" des="Portfolio" />
+          <div className="flex flex-col gap-4 font-titleFont mb-14">
+      <h3 className="text-lg uppercase font-bold text-[#006b6a] tracking-wide">
+       {"My Projects"}
+      </h3>
+      <h1 className="text-4xl md:text-5xl text-[#0A0F1F] dark:text-gray-300 font-bold capitalize">{"Portfolio"}</h1>
+    </div>
         </motion.div>
 
         {/* Category Selector */}
         <div className="flex justify-center my-12">
           <motion.ul 
-            className="flex flex-wrap justify-center gap-3 p-4 bg-white/80 dark:bg-black/60 backdrop-blur-lg rounded-2xl shadow-lg rotate-[-1deg]"
+            className="flex flex-wrap justify-center gap-3 p-4 bg-white/80 dark:bg-[#001919] backdrop-blur-lg rounded-2xl shadow-lg rotate-[-1deg]"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
           >
@@ -50,7 +55,7 @@ const Projects = () => {
                 onClick={() => setActiveCategory(category.key)}
                 className={`px-5 py-2.5 text-sm font-medium rounded-lg cursor-pointer transition-all
                   ${activeCategory === category.key
-                    ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-md rotate-0"
+                    ? "bg-gradient-to-r from-blue-500 to-cyan-500 dark:bg-none dark:bg-[#001919] text-white shadow-md rotate-0"
                     : "bg-gray-100/50 dark:bg-gray-800/50 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rotate-[-3deg] hover:rotate-0"
                   }`}
                 whileHover={{ scale: 1.05 }}
@@ -68,7 +73,7 @@ const Projects = () => {
           initial={{ opacity: 0, rotate: -2, scale: 0.98 }}
           animate={{ opacity: 1, rotate: 0, scale: 1 }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="bg-[#0A0F1F] dark:bg-gray-900/80 backdrop-blur-lg rounded-xl shadow-xl p-6 rotate-[-0.5deg] hover:rotate-0 transition-transform duration-300 relative z-30"
+          className="bg-[#0A0F1F] dark:bg-[#001919] backdrop-blur-lg rounded-xl shadow-xl p-6 rotate-[-0.5deg] hover:rotate-0 transition-transform duration-300 relative z-30"
         >
           {activeCategory === "Desktop" && <DesktopProject />}
           {activeCategory === "Mobile" && <MobileProject />}

@@ -42,7 +42,7 @@ const Achievements = () => {
   };
 
   return (
-    <section id="achievements" className="relative w-full min-h-screen py-20 bg-slate-900 flex flex-col items-center">
+    <section id="achievements" className="relative w-full min-h-screen py-20 bg-slate-900 dark:bg-[#001919] flex flex-col items-center">
       {/* Section Header */}
       <motion.h2
         className="text-5xl font-bold text-center bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent mb-10"
@@ -56,7 +56,7 @@ const Achievements = () => {
       <div className="relative w-full max-w-3xl px-4">
         <motion.div
           key={currentIndex}
-          className="p-8 bg-gradient-to-br from-slate-800/60 to-slate-900/60 backdrop-blur-xl rounded-3xl border border-slate-700/40 shadow-2xl overflow-hidden"
+          className="p-8 bg-gradient-to-br from-slate-800/60 to-slate-900/60 dark:from-[#001919] dark:to-[#004D4D] backdrop-blur-xl rounded-3xl border border-slate-700/40 shadow-2xl overflow-hidden"
           initial={{ opacity: 0, scale: 0.95, y: 50 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ type: "spring", bounce: 0.4, duration: 0.8 }}

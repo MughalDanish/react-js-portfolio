@@ -11,7 +11,7 @@ const WebProjects = () => {
     >
         <div className="grid md-grid-cols-1 mdl:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-4">
         <ProjectsCard
-        title="Food Square Mobile App" 
+        title="NoCode Website Builder" 
         des="NoCode Website Builder platform that enables users to create, edit, and deploy websites through AI-driven prompting without coding. It includes version control, multi-page support, and free deployment on Vercel, targeting entrepreneurs, small businesses, and non-technical users for effortless website creation."
         imageSrc={fypPoster}
         videoSrc={fyp}

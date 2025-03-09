@@ -33,7 +33,7 @@ const Navbar = () => {
         className="flex items-center justify-center p-3 rounded-full shadow-lg transition-all duration-300 
         bg-gradient-to-br from-blue-500 to-teal-400 dark:from-gray-700 dark:to-gray-900 hover:scale-110"
       >
-        {theme === "light" ? (
+        {theme === "dark" ? (
           <MdDarkMode className="text-white text-2xl" />
         ) : (
           <MdLightMode className="text-yellow-300 text-2xl" />

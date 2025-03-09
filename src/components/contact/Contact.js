@@ -45,7 +45,7 @@ const Contact = () => {
   return (
     <motion.section
       id="contact"
-      className="w-full py-20 bg-gradient-to-b from-[#0a0f1f] to-[#1a1f33] text-white flex justify-center items-center"
+      className="w-full py-20 bg-gradient-to-b from-[#0a0f1f] to-[#1a1f33] dark:from-[#001919] dark:to-[#004D4D] text-white flex justify-center items-center"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -53,7 +53,7 @@ const Contact = () => {
       <div className="w-[90%] max-w-6xl flex flex-col md:flex-row gap-10">
         {/* Left Contact Form */}
         <motion.div
-          className="w-full md:w-1/2 bg-[#121829] shadow-2xl rounded-2xl p-8 border border-[#1f2a48] backdrop-blur-xl"
+          className="w-full md:w-1/2 bg-[#121829] dark:bg-[#001919] shadow-2xl rounded-2xl p-8 border border-[#1f2a48] backdrop-blur-xl"
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.3 }}
         >
@@ -84,7 +84,7 @@ const Contact = () => {
             <input
               onChange={(e) => setUsername(e.target.value)}
               value={username}
-              className="w-full p-4 bg-[#1e253a] border border-[#2c3c58] rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#80d0c7]"
+              className="w-full p-4 bg-[#1e253a] dark:bg-[#001919] border border-[#2c3c58] rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#80d0c7]"
               type="text"
               placeholder="Your Name"
             />
@@ -92,7 +92,7 @@ const Contact = () => {
             <input
               onChange={(e) => setEmail(e.target.value)}
               value={email}
-              className="w-full p-4 bg-[#1e253a] border border-[#2c3c58] rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#80d0c7]"
+              className="w-full p-4 bg-[#1e253a] dark:bg-[#001919] border border-[#2c3c58] rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#80d0c7]"
               type="email"
               placeholder="Your Email"
             />
@@ -100,7 +100,7 @@ const Contact = () => {
             <textarea
               onChange={(e) => setMessage(e.target.value)}
               value={message}
-              className="w-full p-4 bg-[#1e253a] border border-[#2c3c58] rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#80d0c7]"
+              className="w-full p-4 bg-[#1e253a] dark:bg-[#001919] border border-[#2c3c58] rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#80d0c7]"
               rows="5"
               placeholder="Your Message"
             ></textarea>

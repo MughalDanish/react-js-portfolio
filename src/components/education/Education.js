@@ -25,7 +25,7 @@ const Education = () => {
   return (
     <motion.section
       id="education"
-      className="relative w-full py-28 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden"
+      className="relative w-full py-28 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 dark:from-[#001919] dark:to-[#004D4D] text-white overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}

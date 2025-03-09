@@ -4,7 +4,7 @@ import { SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <footer className="relative w-full py-10 bg-gradient-to-b from-[#0a0f1f] to-[#1a1f33] text-white">
+    <footer className="relative w-full py-10 bg-gradient-to-b from-[#0a0f1f] to-[#1a1f33] dark:bg-none dark:bg-[#001919] text-white">
       {/* Glowing Top Border */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-400 to-blue-500 blur-lg"></div>
 

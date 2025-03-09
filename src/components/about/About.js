@@ -26,7 +26,12 @@ const About = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <Title title="About" des="Who I Am" />
+          <div className="flex flex-col gap-4 font-titleFont mb-14">
+      <h3 className="text-lg uppercase font-bold text-[#006b6a] tracking-wide">
+       {"About"}
+      </h3>
+      <h1 className="text-4xl md:text-5xl text-[#0A0F1F] dark:text-gray-300 font-bold capitalize">{"Who I am"}</h1>
+    </div>
         </motion.div>
 
         {/* Content Card */}

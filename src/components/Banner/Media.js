@@ -16,20 +16,20 @@ const Media = () => {
     {
       icon: <SiLeetcode className="text-[#FFA116] hover:text-black" />, // LeetCode Orange
       link: "https://leetcode.com/u/dnmughal54321/",
-      bg: "bg-black", // LeetCode background
-      hover: "hover:bg-[#FFA116] ", // Orange Hover
+      bg: "bg-[#FFA116]/20", // Light Orange Background
+      hover: "hover:bg-[#FFA116] hover:text-black", // Orange Hover & Black Text
     },
     {
-      icon: <FaGithub className="text-white" />, // GitHub White
+      icon: <FaGithub className="text-white hover:text-black" />, // GitHub White
       link: "https://github.com/MughalDanish/",
-      bg: "bg-[#181717]", // GitHub Dark Gray
-      hover: "hover:bg-gray-800", // Slightly Lighter Gray Hover
+      bg: "bg-gray-300/20", // Light Gray Background
+      hover: "hover:bg-gray-300 hover:text-black", // Light Gray Hover & Black Text
     },
     {
-      icon: <FaLinkedinIn className="text-white" />, // LinkedIn White
+      icon: <FaLinkedinIn className="text-[#0A66C2] hover:text-white/90" />, // LinkedIn Blue
       link: "https://www.linkedin.com/in/muhammad-danish-54718a238/",
-      bg: "bg-[#0A66C2]", // LinkedIn Blue
-      hover: "hover:bg-[#004182]", // Darker LinkedIn Blue Hover
+      bg: "bg-[#0A66C2]/20", // Light Blue Background
+      hover: "hover:bg-[#0A66C2] hover:text-white/90", // Blue Hover & White Text
     },
   ].map((item, index) => (
     <a

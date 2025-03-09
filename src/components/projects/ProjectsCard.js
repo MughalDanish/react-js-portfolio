@@ -10,7 +10,7 @@ const ProjectsCard = ({ title, des, imageSrc, videoSrc, mediaType, gitHubLink })
       whileHover={{ scale: 1.05, y: -5 }} // ✅ Card smoothly lifts on hover
       initial={{ scale: 1, y: 0 }}
       transition={{ duration: 0.4, type: "spring" }}
-      className="relative group w-full h-full rounded-xl bg-gradient-to-b from-[#E3FDFD] to-[#A6E3E9] dark:bg-[#0d0d0d] backdrop-blur-lg 
+      className="relative group w-full h-full rounded-xl bg-gradient-to-b from-[#E3FDFD] to-[#A6E3E9] dark:from-[#001919] dark:to-[#004D4D] backdrop-blur-lg 
         border border-gray-200/50 dark:border-gray-800/50 shadow-xl overflow-hidden cursor-pointer
         transition-all duration-500 hover:shadow-2xl hover:border-gray-300 dark:hover:border-gray-600"
       onMouseEnter={() => setIsHovered(true)}

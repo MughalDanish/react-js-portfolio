@@ -37,9 +37,9 @@ const Card = ({ item: { title, des, icon } }) => {
         scale: 1.05, // Slightly increase size on hover
         boxShadow: "0px 10px 30px rgba(14, 165, 233, 0.3)", // Add glow effect
       }}
-      className="w-full px-8 py-12 rounded-xl shadow-xl flex flex-col items-center bg-gradient-to-b from-[#E3FDFD] to-[#A6E3E9] dark:bg-black backdrop-blur-xl border border-gray-300/20 dark:border-gray-700/40 group relative overflow-hidden transition-all duration-500"
+      className="w-full px-8 py-12 rounded-xl shadow-xl flex flex-col items-center bg-gradient-to-b from-[#E3FDFD] to-[#A6E3E9] dark:bg-none dark:bg-[#001919] backdrop-blur-xl border border-gray-300/20 dark:border-gray-700/40 group relative overflow-hidden transition-all duration-500"
     >
-      <div className="h-72 py-4 overflow-hidden flex flex-col items-center text-center">
+      <div className="h-72 py-4 overflow-hidden flex flex-col items-center text-center ">
         <div className="flex flex-col gap-6">
           {/* Icon Section */}
           <motion.span

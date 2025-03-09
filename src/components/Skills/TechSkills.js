@@ -17,14 +17,14 @@ const TechSkills = () => {
     <section id="techSkill" className="relative w-full text-white flex flex-col items-center overflow-hidden">
       
       {/* 👇 **Top SVG Wave** */}
-      <svg className="absolute bg-gradient-to-b from-[#E3FDFD] to-[#A6E3E9] top-0 left-0 w-full z-0" viewBox="0 0 1440 320">
+      <svg className="absolute bg-gradient-to-b from-[#E3FDFD] to-[#A6E3E9]  dark:from-[#001919] dark:to-[#004D4D] top-0 left-0 w-full z-0" viewBox="0 0 1440 320">
         <path fill="#0a0f1f" d="M0,128L60,144C120,160,240,192,360,213.3C480,235,600,245,720,218.7C840,192,960,128,1080,112C1200,96,1320,128,1380,144L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
       </svg>
 
       {/* **Skills Content** */}
       <motion.div 
       // bg-gradient-to-b from-[#0a0f1f] to-[#1a1f33]
-        className="relative w-full py-32 px-6 max-w-6xl mx-auto z-10"
+        className="relative w-full dark:bg-[#0A0F1F] py-32 px-6 max-w-6xl mx-auto z-10"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -58,8 +58,8 @@ const TechSkills = () => {
       </motion.div>
 
       {/* 👇 **Bottom SVG Wave** */}
-      <svg className="absolute bg-gradient-to-b from-[#E3FDFD] to-[#A6E3E9] bottom-0 left-0 w-full z-0" viewBox="0 0 1440 320">
-        <path fill="#1a1f33" d="M0,288L60,272C120,256,240,224,360,197.3C480,171,600,149,720,165.3C840,181,960,235,1080,250.7C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+      <svg className="absolute bg-gradient-to-b from-[#E3FDFD] to-[#A6E3E9]  dark:from-[#001919] dark:to-[#004D4D] bottom-0 left-0 w-full z-0" viewBox="0 0 1440 320">
+        <path fill="#0A0F1F" d="M0,288L60,272C120,256,240,224,360,197.3C480,171,600,149,720,165.3C840,181,960,235,1080,250.7C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
       </svg>
 
     </section>
