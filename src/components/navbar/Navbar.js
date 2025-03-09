@@ -1,30 +1,46 @@
-import React from 'react';
+import React from "react";
 import { logo } from "../../assets/index";
-import { ThemeContext } from '../../ThemeContext';
+import { ThemeContext } from "../../ThemeContext";
 import { useContext } from "react";
-import { MdDarkMode } from "react-icons/md";
-import { MdLightMode } from "react-icons/md";
-
+import { MdDarkMode, MdLightMode } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <div className="w-full h-24 px-4 sticky top-0 z-50 dark:bg-transparent bg-transparent dark:bg-[#1a1a1a] mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 dark:border-b-gray-400">
-      <div>
-        <img src={logo} alt="logo" />
-      </div>
-      <div className="flex items-center gap-6 lg:gap-10">
-        <button
-          onClick={toggleTheme}
-          className="px-4 py-2 text-3xl text-[#282938] dark:text-gray-300 tracking-wide cursor-pointer hover:text-[#5e3bee] dark:hover:text-[#a5a5ff] duration-300"
-        >
-          {theme === 'light' ? <MdDarkMode/> : <MdLightMode/>}
-        
-        </button>
-      </div>
-    </div>
+    <motion.nav
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="fixed top-0 left-0 w-full h-20 px-6 lg:px-12 flex items-center justify-between 
+      bg-[#0A0F1F] dark:bg-[#1a1a1a]/50 backdrop-blur-xl shadow-md border-b border-gray-300/50 dark:border-gray-700/50 z-50"
+    >
+      {/* Logo */}
+      <motion.div
+        className="flex items-center gap-3 cursor-pointer"
+        whileHover={{ scale: 1.05 }}
+      >
+        <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-teal-400 text-transparent bg-clip-text">
+          | Portfolio
+        </h1>
+      </motion.div>
+
+      {/* Theme Toggle Button */}
+      <motion.button
+        onClick={toggleTheme}
+        whileTap={{ scale: 0.9 }}
+        className="flex items-center justify-center p-3 rounded-full shadow-lg transition-all duration-300 
+        bg-gradient-to-br from-blue-500 to-teal-400 dark:from-gray-700 dark:to-gray-900 hover:scale-110"
+      >
+        {theme === "light" ? (
+          <MdDarkMode className="text-white text-2xl" />
+        ) : (
+          <MdLightMode className="text-yellow-300 text-2xl" />
+        )}
+      </motion.button>
+    </motion.nav>
   );
-}
+};
 
 export default Navbar;

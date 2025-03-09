@@ -10,8 +10,8 @@ export const featuresData = [
   {
     id: 1,
     icon: <AiFillAppstore/>,
-    title: "IOS App Development",
-    des: "Expert in cross-platform iOS development using Flutter, with skills in Node.js and databases like Firebase, MongoDB, and SQL."
+    title: "Android App Development",
+    des: "Expert in cross-platform android development using Flutter, with Backend-as-a-Service (BaaS) platforms like Firebase, Node. js with Express. js"
   },
   {
     id: 2,
@@ -34,8 +34,8 @@ export const featuresData = [
   {
     id: 5,
     icon: <SiAntdesign />,
-    title: "UI/UX Design",
-    des: "Design intuitive interfaces using Figma and Flutter Flow for enhanced user experiences.",
+    title: "ASP.Net Development",
+    des: "ASP.NET backend developer, specializing in C# and databases like SQL Server, and PostgreSQL using Entity Framework Core for efficient data management.",
   },
   {
     id: 6,

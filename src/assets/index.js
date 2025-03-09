@@ -22,6 +22,8 @@ import GameProjectBanner from "./images/projects/GameProjectBanner.png"
 import GameProjectApp from "./images/projects/GameProjectApp.mp4"
 import FoodMobileBanner from "./images/projects/FoodMobileBanner.png"
 import FoodMobileApp from "./images/projects/FoodMobileApp.mp4"
+import fyp from "./images/projects/fyp.webm"
+import fypPoster from "./images/projects/fypPoster.png"
 
 export {
     logo,
@@ -48,4 +50,6 @@ export {
     FoodMobileBanner,
     bannerImgDark,
     bannerImgLight,
+    fyp,
+    fypPoster,
 };
